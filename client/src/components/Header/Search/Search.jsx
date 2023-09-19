@@ -18,7 +18,7 @@ const Search = ({ setShowSearch }) => {
             if (item.attributes.title.toLowerCase().search(str.toLowerCase()) !== (-1)) {
                 return item;
             } else {
-                return;
+                return null;
             }
         });
 
