@@ -1,6 +1,6 @@
 import "./Cart.scss";
 import { MdClose } from 'react-icons/md';
-import { BsCart, BsCartX } from 'react-icons/bs';
+import { BsCartX } from 'react-icons/bs';
 import CartItem from './CartItem/CartItem';
 import { Context } from "../../utils/context";
 import { useContext } from "react";

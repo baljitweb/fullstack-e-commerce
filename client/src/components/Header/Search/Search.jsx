@@ -1,5 +1,5 @@
 import "./Search.scss";
-import { useContext, useState, useEffect } from 'react';
+import { useContext, useState } from 'react';
 import { MdClose } from 'react-icons/md';
 import { Context } from "../../../utils/context";
 import { useNavigate } from "react-router-dom";
@@ -19,6 +19,7 @@ const Search = ({ setShowSearch }) => {
         });
 
         setSearchResults(result);
+        return result;
     };
 
     const onChange = (e) => {

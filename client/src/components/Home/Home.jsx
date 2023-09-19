@@ -11,7 +11,7 @@ const Home = () => {
     useEffect(() => {
         getCategories();
         getProducts();
-    }, []);
+    });
 
     const getCategories = () => {
         fetchDataFromApi('/api/categories?populate=*').then((res) => {

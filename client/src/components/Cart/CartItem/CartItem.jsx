@@ -3,7 +3,7 @@ import { MdClose } from 'react-icons/md';
 
 import { Context } from "../../../utils/context";
 import {
-    useContext, useState
+    useContext
 } from "react";
 
 const baseURL = process.env.REACT_APP_DEV_URL;
