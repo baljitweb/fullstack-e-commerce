@@ -17,10 +17,10 @@ function AppContext({ children }) {
     useEffect(() => {
         console.log('cartItems: ', cartItems);
         let subTotal = 0, count = 0;
-        cartItems.map(item => {
-            subTotal += item.attributes.price * item.attributes.quantity;
-            count += item.attributes.quantity;
-        });
+        cartItems.map(item => (
+            subTotal += item.attributes.price * item.attributes.quantity,
+            count += item.attributes.quantity
+        ));
         setCartSubTotal(subTotal);
         setCartCount(count);
     }, [cartItems]);
