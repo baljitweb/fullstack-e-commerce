@@ -17,6 +17,8 @@ const Search = ({ setShowSearch }) => {
         const result = products?.data?.filter(item => {
             if (item.attributes.title.toLowerCase().search(str.toLowerCase()) !== (-1)) {
                 return item;
+            } else {
+                return;
             }
         });
 
